@@ -40,6 +40,8 @@ public class Topico {
 //		this.mensagem = mensagem;
 //		this.curso = curso;
 //	}
+	
+	
 
 	@Override
 	public int hashCode() {
@@ -47,6 +49,17 @@ public class Topico {
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
+	}
+
+	public Topico() {
+	}
+	
+	
+
+	public Topico(String titulo, String mensagem, Curso curso) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
 	}
 
 	@Override
